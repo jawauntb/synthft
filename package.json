@@ -1,0 +1,19 @@
+{
+  "name": "synthft",
+  "version": "1.0.0",
+  "description": "derivative fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jawauntb/synthft.git"
+  },
+  "author": "Jawaun Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jawauntb/synthft/issues"
+  },
+  "homepage": "https://github.com/jawauntb/synthft#readme"
+}
