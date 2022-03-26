@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "derivative fun",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jawauntb/synthft.git"
@@ -15,5 +12,54 @@
   "bugs": {
     "url": "https://github.com/jawauntb/synthft/issues"
   },
-  "homepage": "https://github.com/jawauntb/synthft#readme"
+  "homepage": "https://github.com/jawauntb/synthft#readme",
+  "dependencies": {
+    "@dnd-kit/core": "^4.0.0",
+    "@dnd-kit/modifiers": "^4.0.0",
+    "@dnd-kit/sortable": "^5.0.0",
+    "@reduxjs/toolkit": "^1.5.0",
+    "@types/react-datepicker": "^3.1.8",
+    "@types/redux-persist": "^4.3.1",
+    "axios": "^0.21.1",
+    "normalize.css": "^8.0.1",
+    "styled-components": "^5.3.0",
+    "typescript": "^4.1.5"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^12.19.16",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/styled-components": "^5.1.10",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "eslint": "^7.20.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.8",
+    "jest-styled-components": "^7.0.3",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.{css,md,json}": "prettier --write"
+  },
+  "engines": {
+    "node": "16.5.0"
+  }
 }

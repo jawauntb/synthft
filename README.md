@@ -1,2 +1,3 @@
 # synthft
-thing to do things 
+
+nice package
